@@ -23,8 +23,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell" do |s|
     s.path = "provision/init_lamp.sh"
     s.name = "init_lamp"
-    s.env = {"LANGUAGE" => "it_IT.UTF-8", "LANG" => "it_IT.UTF-8", "LC_ALL" => "en_US.UTF-8", "DEBIAN_FRONTEND" => "noninteractive"}
-    s.args   = ["LAMP Env"]
+    s.env = {"DEBIAN_FRONTEND" => "noninteractive"}
+    s.args = ["LAMP Env"]
   end
 
   # PROVISION iGruppi
