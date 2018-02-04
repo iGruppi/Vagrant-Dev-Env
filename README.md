@@ -3,8 +3,9 @@ Vagrant è di grande supporto nella realizzazione di macchine virtuali e del lor
 Grazie a Vagrant e Virtualbox è possibile costruire rapidamente l'ambiente di sviluppo di iGruppi.
 
 # Requisiti
-- [Virtualbox](https://www.virtualbox.org/)
-- [Vagrant](https://www.vagrantup.com)
+- [git](https://git-scm.com) - [Install git](https://git-scm.com/book/it/v1/Per-Iniziare-Installare-Git)
+- [Virtualbox](https://www.virtualbox.org) - [Install Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+- [Vagrant](https://www.vagrantup.com) - [Install Vagrant](https://www.vagrantup.com/intro/getting-started/install.html)
 - [Plugin Vagrant VBGuest](https://github.com/dotless-de/vagrant-vbguest)
 
 # Installazione
