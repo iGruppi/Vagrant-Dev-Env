@@ -68,5 +68,6 @@ fi
 if [ "$EMPTY_DB" = true ] ; then
     mysql -uroot -proot_password igruppi < /var/www/igruppi/documentation/database/igruppi2_create-db.sql
     mysql -uroot -proot_password igruppi < /var/www/igruppi/documentation/database/igruppi2_update-db_1.sql
+    mysql -uroot -proot_password igruppi < /var/www/igruppi/documentation/database/igruppi_data_anonymous.sql
 fi
 
