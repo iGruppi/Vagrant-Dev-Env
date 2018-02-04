@@ -2,7 +2,7 @@
 
 echo "PROVISIONING -> $1"
 
-# MIGRATE from MySQL to MariaDB
+# Install MariaDB, Apache2, PHP and some extensions
 apt-get install software-properties-common --assume-yes
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
 apt-get update
@@ -22,6 +22,8 @@ debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/admin-pass password root
 debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/app-pass password app_pass"
 debconf-set-selections <<< "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2"
 apt-get install phpmyadmin --assume-yes
+# FIX php_admin_value upload_tmp_dir set in /etc/phpmyadmin/apache.conf
+chown vagrant:vagrant /var/lib/phpmyadmin/tmp
 
 # Install GIT
 apt-get install git-core git-flow --assume-yes
