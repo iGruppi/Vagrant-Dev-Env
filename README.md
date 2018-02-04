@@ -6,10 +6,9 @@ Grazie a Vagrant e Virtualbox è possibile costruire rapidamente l'ambiente di s
 - [git](https://git-scm.com) - [Install git](https://git-scm.com/book/it/v1/Per-Iniziare-Installare-Git)
 - [Virtualbox](https://www.virtualbox.org) - [Install Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 - [Vagrant](https://www.vagrantup.com) - [Install Vagrant](https://www.vagrantup.com/intro/getting-started/install.html)
-- [Plugin Vagrant VBGuest](https://github.com/dotless-de/vagrant-vbguest)
 
 # Installazione
-Dopo aver installato Vagrant installare il plugin vbguest:
+Dopo aver installato Vagrant installare il [plugin Vagrant VBGuest](https://github.com/dotless-de/vagrant-vbguest):
 ```
 $ vagrant plugin install vagrant-vbguest
 ```
