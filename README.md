@@ -21,7 +21,7 @@ $ cd Vagrant-Dev-Env
 $ vagrant up
 ```
 A questo punto l'ambiente di sviluppo è raggiungibile all'indirizzo:
-http://localhost:8888/
-PhpMyAdmin: http://localhost:8888/phpmyadmin
+- iGruppi: http://localhost:8888/
+- PhpMyAdmin: http://localhost:8888/phpmyadmin
 
 Potrete modificare i sorgenti nella directory di lavoro e verificare direttamente il risultato sulla macchina virtuale appena creata e raggiungibile all'indirizzo qui sopra.
