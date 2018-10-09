@@ -18,7 +18,7 @@ Dopo aver installato i due software qui sopra creare una nuova directory di lavo
 $ git clone https://github.com/iGruppi/iGruppi.git
 $ cd iGruppi
 $ git submodule update --init --recursive
-$
+$ cd ..
 $ git clone https://github.com/iGruppi/Vagrant-Dev-Env.git
 $ cd Vagrant-Dev-Env
 $ vagrant up
