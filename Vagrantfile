@@ -1,5 +1,11 @@
+$script_ADD_IT_locale = <<-SCRIPT
+    echo "ADD it_IT locale"
+    sed -i -e 's/# it_IT.UTF-8 UTF-8/it_IT.UTF-8 UTF-8/' /etc/locale.gen
+    locale-gen
+SCRIPT
+
 Vagrant.configure("2") do |config|
-  config.vm.box = "debian-8.10-amd64"
+  config.vm.box = "debian/jessie64"
 
   # SET LOCALE
   ENV['LC_ALL']="it_IT.UTF-8"
@@ -18,6 +24,9 @@ Vagrant.configure("2") do |config|
 
   # DISABLE the default Vagrant share
   config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  # ADD IT LOCALE
+  config.vm.provision "shell", inline: $script_ADD_IT_locale
 
   # PROVISION LAMP
   config.vm.provision "shell" do |s|
